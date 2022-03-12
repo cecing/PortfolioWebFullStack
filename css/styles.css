@@ -1,0 +1,15 @@
+.header {
+	height: 70vh;
+	background-image: url(../images/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+h1,
+h2 {
+	font-family: "Hind", sans-serif;
+	font-weight: 700;
+	color: #0b1c43;
+	text-shadow: 1px 1px 4px whitesmoke;
+}
