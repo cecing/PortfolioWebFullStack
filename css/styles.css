@@ -13,3 +13,9 @@ h2 {
 	color: #0b1c43;
 	text-shadow: 1px 1px 4px whitesmoke;
 }
+
+.imagen {
+	width: auto;
+	height: 240px;
+	border-radius: 5px;
+}
