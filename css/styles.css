@@ -19,3 +19,29 @@ h2 {
 	height: 240px;
 	border-radius: 5px;
 }
+
+.shadow-int {
+	box-shadow: inset 6px 6px 10px rgba(37, 37, 37, 0.616);
+}
+
+.imagen-auto {
+	height: auto;
+}
+
+#experiencia {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.h2SimpleWhite {
+	color: white;
+	text-shadow: none;
+}
+.negrita {
+	font-weight: 600;
+}
+
+ul {
+	list-style-type: none;
+	font-family: "Noto Sans", sans-serif;
+	font-size: 1.4rem;
+}
