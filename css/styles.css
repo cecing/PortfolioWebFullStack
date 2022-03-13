@@ -28,7 +28,8 @@ h2 {
 	height: auto;
 }
 
-#experiencia {
+#experiencia,
+#education {
 	padding-left: 10%;
 	padding-right: 10%;
 }
@@ -44,4 +45,10 @@ ul {
 	list-style-type: none;
 	font-family: "Noto Sans", sans-serif;
 	font-size: 1.4rem;
+}
+.textBlue {
+	color: #0b1c43;
+}
+.bg-blue {
+	background-color: #0b1c43;
 }
