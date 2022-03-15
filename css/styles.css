@@ -52,3 +52,7 @@ ul {
 .bg-blue {
 	background-color: #0b1c43;
 }
+
+.btnAncho {
+	width: 100%;
+}
