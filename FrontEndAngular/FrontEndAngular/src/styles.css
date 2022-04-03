@@ -1,1 +1,160 @@
-/* You can add global styles to this file, and also import other style files */
+.header {
+	height: 70vh;
+	background-image: url(../images/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+h1,
+h2 {
+	font-family: "Hind", sans-serif;
+	font-weight: 700;
+	color: #0b1c43;
+	text-shadow: 1px 1px 4px whitesmoke;
+}
+
+.imagen {
+	width: auto;
+	height: 240px;
+	border-radius: 5px;
+}
+
+.shadow-int {
+	box-shadow: inset 6px 6px 10px rgba(37, 37, 37, 0.616);
+}
+
+.imagen-auto {
+	height: auto;
+}
+
+#experiencia,
+#education {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.h2SimpleWhite {
+	color: white;
+	text-shadow: none;
+}
+.negrita {
+	font-weight: 600;
+}
+
+ul {
+	list-style-type: none;
+	font-family: "Noto Sans", sans-serif;
+	font-size: 1.4rem;
+}
+.textBlue {
+	color: #0b1c43;
+}
+.bg-blue {
+	background-color: #0b1c43;
+}
+
+.btnAncho {
+	width: 100%;
+}
+
+
+/*skills*/
+.contenedor {
+	width: 25em;
+	height: 4em;
+	border: 2px solid #28a745;
+	padding: 0;
+}
+
+.texto {
+	font-size: 2em;
+	font-weight: bold;
+	line-height: 2em;
+	width: 12.5em;
+	height: 100%;
+	text-align: start;
+	color: #0b1c43;
+	mix-blend-mode: multiply;
+}
+
+.barra {
+	width: 0;
+	height: 100%;
+	background: #28a745;
+}
+
+#barraHtml {
+	animation: progreso 3s ease-in-out;
+	-webkit-animation: progreso 3s ease-in-out;
+	animation-fill-mode: forwards;
+}
+@-webkit-keyframes progreso {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 75%;
+	}
+}
+
+#barraEquipo {
+	animation: progreso 3s ease-in-out;
+	-webkit-animation: progreso2 3s ease-in-out;
+	animation-fill-mode: forwards;
+}
+@-webkit-keyframes progreso2 {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 85%;
+	}
+}
+
+#barraCss {
+	animation: progreso 3s ease-in-out;
+	-webkit-animation: progreso 3s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+#barraSol {
+	animation: progreso 3s ease-in-out;
+	-webkit-animation: progreso3 3s ease-in-out;
+	animation-fill-mode: forwards;
+}
+@-webkit-keyframes progreso3 {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 80%;
+	}
+}
+
+#barraJS {
+	animation: progreso 3s ease-in-out;
+	-webkit-animation: progreso4 3s ease-in-out;
+	animation-fill-mode: forwards;
+}
+@-webkit-keyframes progreso4 {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 65%;
+	}
+}
+
+#barraComunic {
+	animation: progreso 3s ease-in-out;
+	-webkit-animation: progreso5 3s ease-in-out;
+	animation-fill-mode: forwards;
+}
+@-webkit-keyframes progreso5 {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 95%;
+	}
+}
