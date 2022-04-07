@@ -9,6 +9,8 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
 import { EducationComponent } from './componentes/education/education.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { PysComponent } from './componentes/pys/pys.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { PysComponent } from './componentes/pys/pys.component';
     PysComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
