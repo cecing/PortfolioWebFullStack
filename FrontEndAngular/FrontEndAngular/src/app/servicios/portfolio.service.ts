@@ -8,7 +8,7 @@ export class PortfolioService {
 
   constructor() {
     obtenerDatos():Observable{
-      
+      return this.http.get('data.json');
     }
    }
 }
