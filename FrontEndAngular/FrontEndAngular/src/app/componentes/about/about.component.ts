@@ -11,6 +11,7 @@ export class AboutComponent implements OnInit {
   constructor(private datosPortfolio:PortfolioService) { }
 
   ngOnInit(): void {
+    this.datosPortfolio.obtenerDatos();
   }
 
 }
