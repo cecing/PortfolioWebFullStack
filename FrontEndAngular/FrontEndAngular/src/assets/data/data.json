@@ -1,0 +1,80 @@
+{
+    "ArgPrograma":{
+        "logo": "https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1643935033/APLogo-20-20.png",
+        "nombre": "#YoProgramo",
+    },
+    "perfil": {
+        "name": "Cecilia",
+        "dev":"Full Stack Developer",
+        "image": "images/profile.jpg",
+        "descripción1": "Soy Ingeniera Industrial y comencé a formarme en el mundo del Desarrollo Web por hobbie.",
+        "descripsion2": "Genero este sitio como parte de mi ruta de aprendizaje para contar con un espacio personal de creación, desarrollo, mejora y ante todo de vinculación con el sector, tanto compañeros, colegas y organizaciones.",
+    },
+    "work":{
+        "work1":{
+            "position":"work 1",
+            "fetchInicio":"Junio 2021",
+            "fetchFin":"Agosto 2021",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptas distinctio, odio et quidem sint aliquam necessitatibus provident molestias culpa.sint aliquam necessitatibus provident molestias culpa.",
+        },
+        "work2":{
+            "position":"work 2",
+            "fetchInicio":"Febrero 2020",
+            "fetchFin":"Agosto 2020",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptas distinctio, odio et quidem sint aliquam necessitatibus provident molestias culpa.sint aliquam necessitatibus provident molestias culpa.",
+        },
+        "work3":{
+            "position":"work 3",
+            "fetchInicio":"Octubre 2019",
+            "fetchFin":"Enero 2020",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptas distinctio, odio et quidem sint aliquam necessitatibus provident molestias culpa.sint aliquam necessitatibus provident molestias culpa.",
+        }
+
+    },
+    "education":{
+        "Course1":{
+            "name":"Course 1",
+            "fetchInicio":"Junio 2021",
+            "fetchFin":"Agosto 2021",
+            "academy":"Academy X",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+        "Course2":{
+            "name":"Course 2",
+            "fetchInicio":"Junio 2021",
+            "fetchFin":"Agosto 2021",
+            "academy":"Academy Y",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+        "Course3":{
+            "name":"Course 3",
+            "fetchInicio":"Junio 2021",
+            "fetchFin":"Agosto 2021",
+            "academy":"Academy Z",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        }
+    },
+    "skills":["HTML5","Trabajo en Equipo","CSS","Resolución de Problemas","JavaScript","Comunicación"],
+    "proyectos":{
+        "py1":{
+            "name":"Presentación",
+            "tools":"HTML, CSS, reveal.js",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rerum esse repudiandae quod aperiam nesciunt.",
+            "fetch":"Diciembre 2021",
+        },
+        "py2":{
+            "name":"Mini Game",
+            "tools":"HTML, CSS, JS",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rerum esse repudiandae quod aperiam nesciunt.",
+            "fetch":"Enero 2022",
+        },
+        "py3":{
+            "name":"Portfolio",
+            "tools":"HTML, CSS, bootstrap, JS, ...",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rerum esse repudiandae quod aperiam nesciunt.",
+            "fetch":"Agosto 2022",
+        }
+    },
+
+
+}
