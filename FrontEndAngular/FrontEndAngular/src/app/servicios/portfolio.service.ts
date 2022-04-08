@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -6,9 +7,9 @@ import { Observable } from 'rxjs';
 })
 export class PortfolioService {
 
-  constructor() {
-    obtenerDatos():Observable{
-      return this.http.get('data.json');
-    }
-   }
+  constructor(private http:HttpClient) { }
+
+  obtenerDatos():Observable<any>{
+    return this.http.get('../assets/data/data.json')
+  }
 }
