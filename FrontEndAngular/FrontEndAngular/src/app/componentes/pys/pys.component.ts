@@ -11,7 +11,8 @@ export class PysComponent implements OnInit {
   constructor(private datosPortfolio:PortfolioService) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos();
+    this.datosPortfolio.obtenerDatos().subscribe(data =>{
+    });
   }
 
 }
