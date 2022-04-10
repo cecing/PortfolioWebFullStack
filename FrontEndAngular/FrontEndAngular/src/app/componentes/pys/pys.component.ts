@@ -12,7 +12,7 @@ export class PysComponent implements OnInit {
 
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe(data =>{
-      this.miPortfolio-data;
+      this.miPortfolio=data;
     });
   }
 

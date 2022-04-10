@@ -5,10 +5,10 @@
     },
     "perfil": {
         "name": "Cecilia",
-        "dev":"Full Stack Developer",
+        "dev":"Full Stack Developer Jr.",
         "image": "images/profile.jpg",
-        "descripción1": "Soy Ingeniera Industrial y comencé a formarme en el mundo del Desarrollo Web por hobbie.",
-        "descripsion2": "Genero este sitio como parte de mi ruta de aprendizaje para contar con un espacio personal de creación, desarrollo, mejora y ante todo de vinculación con el sector, tanto compañeros, colegas y organizaciones."
+        "description1": "Soy Ingeniera Industrial y comencé a formarme en el mundo del Desarrollo Web por hobbie.",
+        "description2": "Genero este sitio como parte de mi ruta de aprendizaje para contar con un espacio personal de creación, desarrollo, mejora y ante todo de vinculación con el sector, tanto compañeros, colegas y organizaciones."
     },
     "work":{
         "work1":{

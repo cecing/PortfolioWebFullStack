@@ -1,0 +1,99 @@
+.contenedor {
+	width: 25em;
+	height: 4em;
+	border: 2px solid #28a745;
+	padding: 0;
+}
+
+.texto {
+	font-size: 2em;
+	font-weight: bold;
+	line-height: 2em;
+	width: 12.5em;
+	height: 100%;
+	text-align: start;
+	color: #0b1c43;
+	mix-blend-mode: multiply;
+}
+
+.barra {
+	width: 0;
+	height: 100%;
+	background: #28a745;
+}
+
+#barraHtml {
+	animation: progreso 3s ease-in-out;
+	-webkit-animation: progreso 3s ease-in-out;
+	animation-fill-mode: forwards;
+}
+@keyframes progreso {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 75%;
+	}
+}
+
+#barraEquipo {
+	animation: progreso 3s ease-in-out;
+	-webkit-animation: progreso2 3s ease-in-out;
+	animation-fill-mode: forwards;
+}
+@keyframes progreso2 {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 85%;
+	}
+}
+
+#barraCss {
+	animation: progreso 3s ease-in-out;
+	-webkit-animation: progreso 3s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+#barraSol {
+	animation: progreso 3s ease-in-out;
+	-webkit-animation: progreso3 3s ease-in-out;
+	animation-fill-mode: forwards;
+}
+@keyframes progreso3 {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 80%;
+	}
+}
+
+#barraJS {
+	animation: progreso 3s ease-in-out;
+	-webkit-animation: progreso4 3s ease-in-out;
+	animation-fill-mode: forwards;
+}
+@keyframes progreso4 {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 65%;
+	}
+}
+
+#barraComunic {
+	animation: progreso 3s ease-in-out;
+	-webkit-animation: progreso5 3s ease-in-out;
+	animation-fill-mode: forwards;
+}
+@keyframes progreso5 {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 95%;
+	}
+}
