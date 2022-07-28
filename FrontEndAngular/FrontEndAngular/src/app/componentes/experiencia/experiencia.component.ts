@@ -15,5 +15,4 @@ export class ExperienciaComponent implements OnInit {
       this.miPortfolio=data;
     });
   }
-
 }

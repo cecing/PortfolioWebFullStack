@@ -1,0 +1,28 @@
+.imagen {
+	position: absolute;
+	border-radius:100%;
+	box-shadow:3px 3px 3px grey;
+	width: 6em;
+	height: 6em;
+}
+
+@media (min-width: 429px){
+	#fotoPerfil{
+		left: 14%; top: 75%;
+	} 
+}
+@media (max-width: 428px){
+	#fotoPerfil{
+		left: 40%;
+		top: 75%;
+	}
+	h2{
+		margin-top: 10%;
+	}
+}
+
+h3,h4{
+	font-weight:bold;
+	text-align: center;
+	color: #0b1c43;
+}

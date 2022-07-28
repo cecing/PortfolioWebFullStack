@@ -1,0 +1,22 @@
+.h2SimpleWhite {
+	color: white;
+	text-shadow: none;
+}
+
+.shadow-int {
+	box-shadow: inset -6px -6px 10px #7dd4a4;
+}
+
+#experiencia {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.negrita {
+	font-weight: 600;
+    color: #0b1c43;
+}
+
+li{
+	text-align: center;
+}

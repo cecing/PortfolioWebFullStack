@@ -1,0 +1,24 @@
+.negrita {
+	font-weight: 600;
+}
+
+#education {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.textBlue {
+	color: #0b1c43;
+}
+
+.bg-blue {
+	background-color: #0b1c43;
+}
+
+.shadow-int {
+	box-shadow: inset 6px -6px 10px rgba(37, 37, 37, 0.616);
+}
+
+li{
+	text-align: center;
+}

@@ -1,38 +1,7 @@
-.header {
-	height: 70vh;
-	background-image: url(../images/banner.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-
-h1,
-h2 {
-	font-family: "Hind", sans-serif;
-	font-weight: 700;
-	color: #0b1c43;
-	text-shadow: 1px 1px 4px whitesmoke;
-}
-
-.imagen {
-	width: auto;
-	height: 240px;
-	border-radius: 5px;
-}
-
-.shadow-int {
-	box-shadow: inset 6px 6px 10px rgba(37, 37, 37, 0.616);
-}
-
 .imagen-auto {
 	height: auto;
 }
 
-#experiencia,
-#education {
-	padding-left: 10%;
-	padding-right: 10%;
-}
 .h2SimpleWhite {
 	color: white;
 	text-shadow: none;
@@ -45,12 +14,6 @@ ul {
 	list-style-type: none;
 	font-family: "Noto Sans", sans-serif;
 	font-size: 1.4rem;
-}
-.textBlue {
-	color: #0b1c43;
-}
-.bg-blue {
-	background-color: #0b1c43;
 }
 
 .btnAncho {
