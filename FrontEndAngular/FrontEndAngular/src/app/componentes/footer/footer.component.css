@@ -1,0 +1,11 @@
+.h2SimpleWhite {
+	color: white;
+	text-shadow: none;
+	text-align: right;
+}
+
+#map{
+    border: 0;
+	padding: 0.4em;
+	padding-left: 4em;
+}

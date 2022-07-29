@@ -10,6 +10,7 @@ import { EducationComponent } from './componentes/education/education.component'
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { PysComponent } from './componentes/pys/pys.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './componentes/footer/footer.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     ExperienciaComponent,
     EducationComponent,
     SkillsComponent,
-    PysComponent
+    PysComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
