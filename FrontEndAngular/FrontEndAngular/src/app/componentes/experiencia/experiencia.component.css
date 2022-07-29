@@ -20,3 +20,9 @@
 li{
 	text-align: center;
 }
+
+ul {
+	list-style-type: none;
+	font-family: "Noto Sans", sans-serif;
+	font-size: 1.4rem;
+}
