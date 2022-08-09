@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/servicios/portfolio.service';
+import { Route, Router } from '@angular/router';
+// import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +8,7 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  /*
   miPortfolio:any;
   constructor(private datosPortfolio:PortfolioService) { }
 
@@ -15,5 +17,13 @@ export class NavbarComponent implements OnInit {
       this.miPortfolio=data;
     });
   }
+*/
+constructor(private router: Router){
 
+}
+ngOnInit(): void {
+}
+login(){
+  this.router.navigate(['/login']);
+}
 }

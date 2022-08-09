@@ -25,6 +25,10 @@ export class AboutComponent implements OnInit {
   constructor(public personaService: PersonaService) { }
 
   ngOnInit(): void {
-    this.personaService.getPersona().subscribe(data =>{this.persona = data;});
-  }
+    this.personaService.getPersona().subscribe(data =>{
+      console.log(data);
+      console.log(data.nombre);
+      this.persona = data;});
+  };
+
 }

@@ -11,7 +11,9 @@ import { SkillsComponent } from './componentes/skills/skills.component';
 import { PysComponent } from './componentes/pys/pys.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './componentes/footer/footer.component';
-
+import { HomeComponent } from './componentes/home/home.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -23,11 +25,14 @@ import { FooterComponent } from './componentes/footer/footer.component';
     EducationComponent,
     SkillsComponent,
     PysComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
