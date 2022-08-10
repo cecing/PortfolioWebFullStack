@@ -18,7 +18,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
 public class PersonaController {
-    @Autowired IPersonaService ipersonaService;
+    
+    @Autowired 
+    public IPersonaService ipersonaService;
     
     @GetMapping("personas/traer")
     @ResponseBody
@@ -27,15 +29,13 @@ public class PersonaController {
     }
     
     @PostMapping("/personas/crear")
-    public String createPersona(@RequestBody Persona persona){
+    public void createPersona(@RequestBody Persona persona){
         ipersonaService.savePersona(persona);
-        return "La persona fue creada correctamente";
     }
     
     @DeleteMapping("/personas/borrar/{id}")
-    public String deletePersona(@PathVariable Long id){
+    public void deletePersona(@PathVariable Long id){
         ipersonaService.deletePersona(id);
-        return "Se eliminó la persona correctamente";
     }
     
     @PutMapping("/personas/editar/{id}")
