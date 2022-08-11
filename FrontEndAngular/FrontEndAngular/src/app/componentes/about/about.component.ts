@@ -21,13 +21,15 @@ export class AboutComponent implements OnInit {
     });
   }
   */
-  persona: persona = new persona("","","");
+  persona: persona = new persona("", "","");
   constructor(public personaService: PersonaService) { }
 
   ngOnInit(): void {
     this.personaService.getPersona().subscribe(data =>{
-      console.log(data[0]);
-      this.persona = data;});
+      this.persona = data;
+      console.log(data);
+    });
+    console.log(persona);
   };
 
 }
