@@ -8,5 +8,5 @@ export class persona{
         this.nombre = nombre;
         this.apellido = apellido;
         this.img = img;
-    };
+    }
 }

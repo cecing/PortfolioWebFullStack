@@ -36,7 +36,7 @@ onLogOut():void{
   window.location.reload();
 }
 
-logIn(){
+login(){
   this.router.navigate(['/login']);
 }
 }

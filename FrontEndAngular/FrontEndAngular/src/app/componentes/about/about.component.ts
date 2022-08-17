@@ -28,8 +28,8 @@ export class AboutComponent implements OnInit {
     this.personaService.getPersona().subscribe(data =>{
       this.persona = data;
       console.log(data);
-    });
-    console.log(persona);
-  };
+    })
+
+  }
 
 }
