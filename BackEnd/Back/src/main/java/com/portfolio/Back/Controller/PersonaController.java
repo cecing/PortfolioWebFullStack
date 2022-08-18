@@ -5,7 +5,7 @@ import com.portfolio.Back.Interface.IPersonaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,24 +23,28 @@ public class PersonaController {
     @Autowired
     public IPersonaService ipersonaService;
 
+    @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("personas/traer")
     @ResponseBody
     public List<Persona> getPersona() {
         return ipersonaService.getPersona();
     }
 
+    @CrossOrigin(origins = "http://localhost:4200")
     @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/personas/crear")
     public void createPersona(@RequestBody Persona persona) {
         ipersonaService.savePersona(persona);
     }
 
+    @CrossOrigin(origins = "http://localhost:4200")
     @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping("/personas/borrar/{id}")
     public void deletePersona(@PathVariable Long id) {
         ipersonaService.deletePersona(id);
     }
 
+    @CrossOrigin(origins = "http://localhost:4200")
     @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/personas/editar/{id}")
     public Persona editPersona(@PathVariable Long id,
@@ -56,6 +60,7 @@ public class PersonaController {
         return persona;
     }
 
+    @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/personas/traer/perfil")
     public Persona findPersona() {
         return ipersonaService.findPersona((long) 1);
