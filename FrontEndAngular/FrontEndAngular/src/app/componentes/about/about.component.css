@@ -1,10 +1,19 @@
 .imagen {
 	position: absolute;
 	border-radius:100%;
-	box-shadow:3px 3px 3px grey;
+	box-shadow:3px 3px 3px rgb(190, 252, 140);
 	width: 6em;
 	height: 6em;
+	object-fit:fill;
+	transition-duration: 1s;
+	transition-timing-function: linear;
 }
+
+.imagen:hover {
+	transform: scale(1.5);
+	transition-duration: 500ms;
+	opacity: 0.9;
+  }
 
 @media (min-width: 429px){
 	#fotoPerfil{
