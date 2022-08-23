@@ -1,39 +1,181 @@
 <div class="container-fluid mt-1 pt-4 pb-4 bg-dark" id="skills">
     <h2 class="text-center pb-3 h2SimpleWhite">Skills</h2>
+
     <div class="row justify-content-center pb-2">
-        <div class="col-xl-6 col-lg-6 col-xs-12 d-flex me-5 contenedor">
-            <div class="barra" id="barraHtml">
-                <div class="texto">{{miPortfolio.skills[0]}}</div>
-            </div>    
+        <div class="col col-xl-3 col-lg-3 col-xs-10 me-5 text-center">
+            <circle-progress
+                [percent]="75"
+                [radius]="67"
+                [space]="-4"
+                [outerStrokeGradient]="true"
+                [outerStrokeWidth]="4"
+                [innerStrokeWidth]="3"
+                [outerStrokeColor]="'#1eb94d'"
+                [outerStrokeGradientStopColor]="'#3bf746'"
+                [innerStrokeColor]="'#f5f5f5'"
+                [animation]="true"
+                [animationDuration]="600"
+                [imageSrc]="'assets/html-5.png'"
+                [imageHeight]="60"
+                [imageWidth]="60"
+                [showImage]="true"
+                [showBackground]="false"
+                [clockwise]="false"
+                [lazy]="true"
+                [backgroundGradient]="true"
+                [backgroundColor]="'#008000'"
+                [backgroundOpacity]="1"
+                [backgroundPadding]="-2"
+            >
+            </circle-progress>
+            <p class="text-white">HTML</p>
         </div>
-        <div class="col-xl-6 col-lg-6 col-xs-12 d-flex ms-5 contenedor">
-            <div class="barra" id="barraEquipo">
-                <div class="texto">{{miPortfolio.skills[1]}}</div>
-            </div>
+        <div class="col col-xl-3 col-lg-3 col-xs-10 text-center me-5">
+            <circle-progress
+                [percent]="70"
+                [radius]="67"
+                [space]="-4"
+                [outerStrokeGradient]="true"
+                [outerStrokeWidth]="4"
+                [innerStrokeWidth]="3"
+                [outerStrokeColor]="'#1eb94d'"
+                [outerStrokeGradientStopColor]="'#3bf746'"
+                [innerStrokeColor]="'#f5f5f5'"
+                [animation]="true"
+                [animationDuration]="600"
+                [imageSrc]="'assets/css.png'"
+                [imageHeight]="60"
+                [imageWidth]="60"
+                [showImage]="true"
+                [showBackground]="false"
+                [clockwise]="false"
+                [lazy]="true"
+                [backgroundGradient]="true"
+                [backgroundColor]="'#008000'"
+                [backgroundOpacity]="1"
+                [backgroundPadding]="-2"
+            >
+            </circle-progress>
+            <p class="text-white">CSS</p>
         </div>
+        <div class="col col-xl-3 col-lg-3 col-xs-10 text-center me-5">
+            <circle-progress
+                [percent]="60"
+                [radius]="67"
+                [space]="-4"
+                [outerStrokeGradient]="true"
+                [outerStrokeWidth]="4"
+                [innerStrokeWidth]="3"
+                [outerStrokeColor]="'#1eb94d'"
+                [outerStrokeGradientStopColor]="'#3bf746'"
+                [innerStrokeColor]="'#f5f5f5'"
+                [animation]="true"
+                [animationDuration]="600"
+                [imageSrc]="'assets/java-script.png'"
+                [imageHeight]="60"
+                [imageWidth]="60"
+                [showImage]="true"
+                [showBackground]="false"
+                [clockwise]="false"
+                [lazy]="true"
+                [backgroundGradient]="true"
+                [backgroundColor]="'#008000'"
+                [backgroundOpacity]="1"
+                [backgroundPadding]="-2"
+            >
+            </circle-progress>
+            <p class="text-white">JavaScript</p>
+        </div>
+
     </div>
+
     <div class="row justify-content-center pb-2">
-        <div class="col-xl-6 col-lg-6 col-xs-12 d-flex me-5 contenedor">
-            <div class="barra" id="barraCss">
-                <div class="texto">{{miPortfolio.skills[2]}}</div>
-            </div>    
+        <div class="col col-xl-3 col-lg-3 col-xs-10 me-5 text-center">
+            <circle-progress
+                [percent]="70"
+                [radius]="67"
+                [space]="-4"
+                [outerStrokeGradient]="true"
+                [outerStrokeWidth]="4"
+                [innerStrokeWidth]="3"
+                [outerStrokeColor]="'#1eb94d'"
+                [outerStrokeGradientStopColor]="'#3bf746'"
+                [innerStrokeColor]="'#f5f5f5'"
+                [animation]="true"
+                [animationDuration]="600"
+                [imageSrc]="'assets/resolucion-de-problemas.png'"
+                [imageHeight]="60"
+                [imageWidth]="60"
+                [showImage]="true"
+                [showBackground]="false"
+                [clockwise]="false"
+                [lazy]="true"
+                [backgroundGradient]="true"
+                [backgroundColor]="'#008000'"
+                [backgroundOpacity]="1"
+                [backgroundPadding]="-2"
+            >
+            </circle-progress>
+            <p class="text-white">resolución de problemas</p>
+
         </div>
-        <div class="col-xl-6 col-lg-6 col-xs-12 d-flex ms-5 contenedor">
-            <div class="barra" id="barraSol">
-                <div class="texto">{{miPortfolio.skills[3]}}</div>
-            </div>
+        <div class="col col-xl-3 col-lg-3 col-xs-10 text-center me-5">
+            <circle-progress
+                [percent]="85"
+                [radius]="67"
+                [space]="-4"
+                [outerStrokeGradient]="true"
+                [outerStrokeWidth]="4"
+                [innerStrokeWidth]="3"
+                [outerStrokeColor]="'#1eb94d'"
+                [outerStrokeGradientStopColor]="'#3bf746'"
+                [innerStrokeColor]="'#f5f5f5'"
+                [animation]="true"
+                [animationDuration]="600"
+                [imageSrc]="'assets/work-team.png'"
+                [imageHeight]="60"
+                [imageWidth]="60"
+                [showImage]="true"
+                [showBackground]="false"
+                [clockwise]="false"
+                [lazy]="true"
+                [backgroundGradient]="true"
+                [backgroundColor]="'#008000'"
+                [backgroundOpacity]="1"
+                [backgroundPadding]="-2"
+            >
+            </circle-progress>
+            <p class="text-white">trabajo en equipo</p>
         </div>
-    </div>
-    <div class="row justify-content-center pb-2">
-        <div class="col-xl-6 col-lg-6 col-xs-12 d-flex me-5 contenedor">
-            <div class="barra" id="barraJS">
-                <div class="texto">{{miPortfolio.skills[4]}}</div>
-            </div>    
+        <div class="col col-xl-3 col-lg-3 col-xs-10 text-center me-5">
+            <circle-progress
+                [percent]="90"
+                [radius]="67"
+                [space]="-4"
+                [outerStrokeGradient]="true"
+                [outerStrokeWidth]="4"
+                [innerStrokeWidth]="3"
+                [outerStrokeColor]="'#1eb94d'"
+                [outerStrokeGradientStopColor]="'#3bf746'"
+                [innerStrokeColor]="'#f5f5f5'"
+                [animation]="true"
+                [animationDuration]="600"
+                [imageSrc]="'assets/comunicacion.png'"
+                [imageHeight]="60"
+                [imageWidth]="60"
+                [showImage]="true"
+                [showBackground]="false"
+                [clockwise]="false"
+                [lazy]="true"
+                [backgroundGradient]="true"
+                [backgroundColor]="'#008000'"
+                [backgroundOpacity]="1"
+                [backgroundPadding]="-2"
+                [showTitle]="true"                
+            >
+        </circle-progress>
+        <p class="text-white">comunicación</p>
         </div>
-        <div class="col-xl-6 col-lg-6 col-xs-12 d-flex ms-5 contenedor">
-            <div class="barra" id="barraComunic">
-                <div class="texto">{{miPortfolio.skills[5]}}</div>
-            </div>
-        </div>
+
     </div>
 </div>
