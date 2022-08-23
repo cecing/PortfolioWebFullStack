@@ -1,54 +1,29 @@
 <div class="container-fluid mt-1 pt-4" id="education">
     <div class="row justify-content-center">
-        <h2 class="text-center pb-3">Educación</h2>
-        <div class="col-xl-4 col-lg-6 col-xs-12 d-flex p-3 pe-0 pt-0 justify-content-center textBlue">
-            <div class="alert pe-0">
-                <ul class="pe-0">
-                    <li>{{miPortfolio.education.Course1.fetchInicio}}</li>
+        <h2 class="text-center pb-3 h2SimpleWhite">Educación</h2>
+        <div class="col-12 m-1">
+            <button type="button" class="btn btn-info" routerLink="/nuevaedu" *ngIf="isLogged">Agregar Educación</button>
+        </div>
+    </div>
+    <div *ngFor="let Educacion of educacion" class="row justify-content-center">
+        <div class="col-xl-3 col-lg-5 col-xs-11 p-3 pt-0 justify-content-center">
+            <div class="alert pt-0" id="eduBorde">
+                <ul class="pt-0">
+                    <li>{{Educacion.fetchInicio}}</li>
                     <li class="text-center">-</li>
-                    <li>{{miPortfolio.education.Course1.fetchFin}}</li>
+                    <li>{{Educacion.fetchFin}}</li>
                 </ul>
             </div>
         </div>
-        <div class="col-xl-8 col-lg-6 col-xs-12 p-3 pt-0">
-            <div class="alert bg-blue shadow-int text-success">
-                <h4 class="negrita">{{miPortfolio.education.Course1.name}}</h4>
-                <h4>{{miPortfolio.education.Course1.academy}}</h4>
-                <p>{{miPortfolio.education.Course1.description}}</p>
+            <div class="col-xl-8 col-lg-6 col-xs-12 p-3 pt-0">
+                <div class="alert bg-success shadow-int">
+                    <h4 class="negrita">{{Educacion.nombreE}}</h4>
+                    <p>{{Educacion.descripcionE}}</p>  
+                </div>
             </div>
-        </div>
-        <div class="col-xl-4 col-lg-6 col-xs-12 d-flex p-3 pe-0 pt-0 justify-content-center textBlue">
-            <div class="alert pe-0">
-                <ul class="pe-0">
-                    <li>{{miPortfolio.education.Course2.fetchInicio}}</li>
-                    <li class="text-center">-</li>
-                    <li>{{miPortfolio.education.Course2.fetchFin}}</li>
-                </ul>
+            <div class="col-1 m-0" *ngIf="isLogged">
+                <button class="btn btn-info mb-2" routerLink="/editedu/{{Educacion.id}}"><i class="bi bi-pencil-square"></i></button>
+                <button class="btn btn-danger text-black" (click)="delete(Educacion.id)"><i class="bi bi-trash3-fill"></i></button>
             </div>
-        </div>
-        <div class="col-xl-8 col-lg-6 col-xs-12 p-3 pt-0">
-            <div class="alert bg-blue shadow-int text-success">
-                <h4 class="negrita">{{miPortfolio.education.Course2.name}}</h4>
-                <h4>{{miPortfolio.education.Course2.academy}}</h4>
-                <p>{{miPortfolio.education.Course2.description}}</p>
-            </div>
-        </div>
-        <div class="col-xl-4 col-lg-6 col-xs-12 d-flex p-3 pe-0 pt-0 justify-content-center textBlue">
-            <div class="alert pe-0">
-                <ul class="pe-0">
-                    <li>{{miPortfolio.education.Course3.fetchInicio}}</li>
-                    <li class="text-center">-</li>
-                    <li>{{miPortfolio.education.Course3.fetchFin}}</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-xl-8 col-lg-6 col-xs-12 p-3 pt-0">
-            <div class="alert bg-blue shadow-int text-success">
-                <h4 class="negrita">{{miPortfolio.education.Course3.name}}</h4>
-                <h4>{{miPortfolio.education.Course3.academy}}</h4>
-                <p>{{miPortfolio.education.Course3.description}}</p>
-            </div>
-        </div>
-
     </div>
 </div>

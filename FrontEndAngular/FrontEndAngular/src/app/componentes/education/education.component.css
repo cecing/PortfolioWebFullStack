@@ -28,3 +28,7 @@ ul {
 	font-family: "Noto Sans", sans-serif;
 	font-size: 1.4rem;
 }
+
+#eduBorde{
+	border: none;
+}
