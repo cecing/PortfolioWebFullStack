@@ -1,22 +1,28 @@
-<div class="container" *ngIf="educacion">
-    <div class="row">
-        <div class="col">
+<section class="vh-100 gradient-custom" *ngIf="educacion">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                <div class="card-body text-center">
+                    <div class="mb-md-5 mt-md-4 pb-5">
+                        <h2 class="fw-bold mb-2 text-uppercase">Editar Educación</h2>
+
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
                     <label for="nombreE">Nombre</label>
-                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="educacion.nombreE" required>
+                    <input type="text" class="form-control" id="nombreE" name="nombreE" placeholder="Curso de comunicación" [(ngModel)]="educacion.nombreE" required>
                 </div>
                 <div class="form-group">
                     <label for="descripcionE">Descripcion</label>
-                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="educacion.descripcionE" required>
+                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" placeholder="Técnicas de comunicación efectiva" [(ngModel)]="educacion.descripcionE" required>
                 </div>
                 <div class="form-group">
                     <label for="fetchInicio">Fecha Inicio</label>
-                    <input type="text" class="form-control" id="fetchInicio" name="fetchInicio" [(ngModel)]="educacion.fetchInicio" required>
+                    <input type="text" class="form-control" id="fetchInicio" name="fetchInicio" placeholder="01/01/1888" [(ngModel)]="educacion.fetchInicio" required>
                 </div>
                 <div class="form-group">
                     <label for="fetchFin">Fecha Fin</label>
-                    <input type="text" class="form-control" id="fetchFin" name="fetchFin" [(ngModel)]="educacion.fetchFin" required>
+                    <input type="text" class="form-control" id="fetchFin" name="fetchFin" placeholder="31/12/1999" [(ngModel)]="educacion.fetchFin" required>
                 </div>
                 <button class="btn btn-success">
                     Actualizar la Educación
@@ -25,3 +31,7 @@
         </div>
     </div>
 </div>
+</div>
+</div>
+</div>
+</section>

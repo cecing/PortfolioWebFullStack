@@ -21,6 +21,7 @@
 
 li{
 	text-align: center;
+	font-size: 0.9em;
 }
 
 ul {
@@ -31,4 +32,12 @@ ul {
 
 #eduBorde{
 	border: none;
+}
+
+
+.neu{
+	border-radius: 12px;
+	background: #4f9457;
+	box-shadow:  2px 2px 2px #395c3e,
+				 -2px -2px 2px #395c3e;
 }
