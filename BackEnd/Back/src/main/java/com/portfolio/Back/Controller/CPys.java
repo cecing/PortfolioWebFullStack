@@ -1,10 +1,9 @@
 package com.portfolio.Back.Controller;
 
-import com.portfolio.Back.Dto.dtoEducacion;
-import com.portfolio.Back.Entity.Educacion;
-import com.portfolio.Back.Entity.Experiencia;
+import com.portfolio.Back.Dto.dtoPys;
+import com.portfolio.Back.Entity.Pys;
 import com.portfolio.Back.Security.Controller.Mensaje;
-import com.portfolio.Back.Security.Service.SEducacion;
+import com.portfolio.Back.Security.Service.SPys;
 import java.util.List;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,75 +20,77 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/educacion")
+@RequestMapping("/pys")
 @CrossOrigin(origins = "http://localhost:4200")
-public class CEducacion {
+public class CPys {
+
     @Autowired
-    public SEducacion sEducacion;
-    
+    public SPys sPys;
+
     @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/lista")
-    public ResponseEntity<List<Educacion>> list() {
-        List<Educacion> list = sEducacion.list();
+    public ResponseEntity<List<Pys>> list() {
+        List<Pys> list = sPys.list();
         return new ResponseEntity(list, HttpStatus.OK);
     }
-    
+
     @CrossOrigin(origins = "http://localhost:4200")
     @PostMapping("/create")
-    public ResponseEntity<?> create(@RequestBody dtoEducacion dtoedu) {
-        if (StringUtils.isBlank(dtoedu.getNombreE())) {
+    public ResponseEntity<?> create(@RequestBody dtoPys dtopys) {
+        if (StringUtils.isBlank(dtopys.getNombreP())) {
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
         }
-        if (sEducacion.existsByNombreE(dtoedu.getNombreE())) {
-            return new ResponseEntity(new Mensaje("Esa educación ya existe"), HttpStatus.BAD_REQUEST);
+        if (sPys.existsByNombreP(dtopys.getNombreP())) {
+            return new ResponseEntity(new Mensaje("Ese Proyecto ya existe"), HttpStatus.BAD_REQUEST);
         }
 
-        Educacion educacion = new Educacion(dtoedu.getNombreE(), dtoedu.getDescripcionE(), dtoedu.getFetchFin(), dtoedu.getFetchInicio());
-        sEducacion.save(educacion);
+        Pys pys = new Pys(dtopys.getNombreP(), dtopys.getDescripcionP(), dtopys.getFetchP(), dtopys.getHerrams(), dtopys.getEnlace());
+        sPys.save(pys);
 
-        return new ResponseEntity(new Mensaje("Educación agregada"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("Proyecto agregado"), HttpStatus.OK);
     }
 
     @CrossOrigin(origins = "http://localhost:4200")
     @PutMapping("update/{id}")
-    public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoEducacion dtoedu) {
-        if (!sEducacion.existsById(id)) {
+    public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoPys dtopys) {
+        if (!sPys.existsById(id)) {
             return new ResponseEntity(new Mensaje("El id no existe"), HttpStatus.BAD_REQUEST);
         }
-        if (sEducacion.existsByNombreE(dtoedu.getNombreE()) && sEducacion.getByNombreE(dtoedu.getNombreE()).get().getId() != id) {
+        if (sPys.existsByNombreP(dtopys.getNombreP()) && sPys.getByNombreP(dtopys.getNombreP()).get().getId() != id) {
             return new ResponseEntity(new Mensaje("Esa educación ya existe"), HttpStatus.BAD_REQUEST);
         }
-        if (StringUtils.isBlank(dtoedu.getNombreE())) {
+        if (StringUtils.isBlank(dtopys.getNombreP())) {
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
         }
 
-        Educacion educacion = sEducacion.getOne(id).get();
-        educacion.setNombreE(dtoedu.getNombreE());
-        educacion.setDescripcionE(dtoedu.getDescripcionE());
-        educacion.setFetchInicio(dtoedu.getFetchInicio());
-        educacion.setFetchFin(dtoedu.getFetchFin());
+        Pys pys = sPys.getOne(id).get();
+        pys.setNombreP(dtopys.getNombreP());
+        pys.setDescripcionP(dtopys.getDescripcionP());
+        pys.setFetchP(dtopys.getFetchP());
+        pys.setHerrams(dtopys.getHerrams());
+        pys.setEnlace(dtopys.getEnlace());
 
-        sEducacion.save(educacion);
-        return new ResponseEntity(new Mensaje("Educacion actualizada"), HttpStatus.OK);
+        sPys.save(pys);
+        return new ResponseEntity(new Mensaje("Proyecto actualizado"), HttpStatus.OK);
     }
-
+    
     @CrossOrigin(origins = "http://localhost:4200")
     @DeleteMapping("delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id) {
-        if (!sEducacion.existsById(id)) {
+        if (!sPys.existsById(id)) {
             return new ResponseEntity(new Mensaje("El id no existe"), HttpStatus.BAD_REQUEST);
         }
-        sEducacion.delete(id);
-        return new ResponseEntity(new Mensaje("Educacion eliminada"), HttpStatus.OK);
+        sPys.delete(id);
+        return new ResponseEntity(new Mensaje("Proyecto eliminado"), HttpStatus.OK);
     }
     
     @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/detail/{id}")
-    public ResponseEntity<Educacion> getById(@PathVariable("id") int id){
-        if(!sEducacion.existsById(id)){
+    public ResponseEntity<Pys> getById(@PathVariable("id") int id){
+        if(!sPys.existsById(id)){
             return new ResponseEntity(new Mensaje("no existe"), HttpStatus.NOT_FOUND);
         }
-        Educacion educacion = sEducacion.getOne(id).get();
-        return new ResponseEntity(educacion, HttpStatus.OK);
+        Pys pys = sPys.getOne(id).get();
+        return new ResponseEntity(pys, HttpStatus.OK);
     }
 }

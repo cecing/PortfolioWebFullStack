@@ -1,49 +1,26 @@
 <div class="container-fluid mt-1 pt-4" id="pys">
     <div class="row justify-content-center">
         <h2 class="text-center pb-3">Proyectos</h2>
-        <div class="col-xl-4 col-lg-6 col-xs-12 d-flex p-3 pe-0 pt-0 justify-content-center">
+        <div class="col-12 m-1">
+            <button type="button" class="btn btn-primary" routerLink="/nuevopys" *ngIf="isLogged">Agregar Proyecto</button>
+        </div>
+        <div *ngFor="let Pys of pys" class="col-xl-4 col-lg-6 col-xs-12 d-flex p-3 pe-0 pt-0 justify-content-center">
             <div class="card text-center">
                 <div class="card-header h2SimpleWhite">
-                    {{miPortfolio.proyectos.py1.tools}}
+                    {{Pys.herrams}}
                 </div>
                 <div class="card-body h2SimpleWhite">
-                    <h5 class="card-title">{{miPortfolio.proyectos.py1.name}}</h5>
-                    <p class="card-text">{{miPortfolio.proyectos.py1.description}}</p>
+                    <h5 class="card-title">{{Pys.nombreP}}</h5>
+                    <p class="card-text">{{Pys.descripcionP}}</p>
                     <a href="https://github.com/user/presentation" class="btn btn-success btnAncho">Go!</a>
                 </div>
                 <div class="card-footer text-muted">
-                    {{miPortfolio.proyectos.py1.fetch}}
+                    {{Pys.fetchP}}
                 </div>
             </div>
-        </div>
-        <div class="col-xl-4 col-lg-6 col-xs-12 d-flex p-3 pe-0 pt-0 justify-content-center">
-            <div class="card text-center">
-                <div class="card-header h2SimpleWhite">
-                    {{miPortfolio.proyectos.py2.tools}}
-                </div>
-                <div class="card-body h2SimpleWhite">
-                    <h5 class="card-title">{{miPortfolio.proyectos.py2.name}}</h5>
-                    <p class="card-text">{{miPortfolio.proyectos.py2.description}}</p>
-                    <a href="https://github.com/user/juego" class="btn btn-success btnAncho">Go!</a>
-                </div>
-                <div class="card-footer text-muted">
-                    {{miPortfolio.proyectos.py2.fetch}}
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-4 col-lg-6 col-xs-12 d-flex p-3 pe-0 pt-0 justify-content-center">
-            <div class="card text-center">
-                <div class="card-header h2SimpleWhite">
-                    {{miPortfolio.proyectos.py3.tools}}
-                </div>
-                <div class="card-body h2SimpleWhite">
-                    <h5 class="card-title">{{miPortfolio.proyectos.py3.name}}</h5>
-                    <p class="card-text">{{miPortfolio.proyectos.py3.description}}.</p>
-                    <a href="#" class="btn btn-success btnAncho">Go!</a>
-                </div>
-                <div class="card-footer text-muted">
-                    {{miPortfolio.proyectos.py3.fetch}}
-                </div>
+            <div class="col-1 m-0" *ngIf="isLogged">
+                <button class="btn btn-info mb-2" routerLink="/editpys/{{Pys.id}}"><i class="bi bi-pencil-square"></i></button>
+                <button class="btn btn-danger text-black" (click)="delete(Pys.id)"><i class="bi bi-trash3-fill"></i></button>
             </div>
         </div>
     </div>

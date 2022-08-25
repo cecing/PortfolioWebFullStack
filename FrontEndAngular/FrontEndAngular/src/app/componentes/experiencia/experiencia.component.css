@@ -32,9 +32,14 @@ ul {
 	border: none;
 }
 
+
 .neu{
 	border-radius: 12px;
-	background: #4f9457;
-	box-shadow:  2px 2px 2px #c9f5cf,
-				 -2px -2px 2px #c9f5cf;
+	background: #dbdfcf;
+	box-shadow:  2px 2px 2px #b6bf95,
+				 -2px -2px 2px #b6bf95;
+}
+
+#fechas{
+	margin: 0 auto;
 }
